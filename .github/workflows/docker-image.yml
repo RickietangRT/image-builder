@@ -1,17 +1,15 @@
 name: Docker Image CI
-
 on:
   push:
     branches: [ "myspace" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      name: check out code
+      name: check out code 
     - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
