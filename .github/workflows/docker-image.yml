@@ -24,6 +24,6 @@ jobs:
         REPOSITORY_VAR: ${{ vars.REPOSITORY_VAR }}
         GITHUB_SHA: ${{ vars.GITHUB_SHA }}
       run: |
-        image_tag=ghcr.io/<your-GitHub-username>/store:$GITHUB_SHA
+        image_tag=ghcr.io/rickietangrt/image-builder:$GITHUB_SHA
         docker build . --file flutter/Dockerfile --tag $image_tag
         docker push $image_tag
