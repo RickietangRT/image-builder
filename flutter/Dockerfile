@@ -10,4 +10,4 @@ RUN mkdir /tmp/flutter && wget https://storage.googleapis.com/flutter_infra_rele
 RUN tar -xf /tmp/flutter/flutter-install.tar.xz -C /home
 ENV PATH="$PATH:/home/flutter/bin"
 RUN git config --global --add safe.directory /home/flutter
-RUN flutter precache
+RUN flutter precache 

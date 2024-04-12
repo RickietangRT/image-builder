@@ -6,3 +6,4 @@ RUN cd vscode-gitlens && npm install sharp --force
 RUN yarn run rebuild
 
 
+ 
